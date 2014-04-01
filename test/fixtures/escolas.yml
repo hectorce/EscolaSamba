@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  NomeEscola: MyString
+  PresidenteEscola: MyString
+  MenbrosEscola: MyString
+  Bandeiraescola: MyString
+  StatusEscola: 1
+
+two:
+  NomeEscola: MyString
+  PresidenteEscola: MyString
+  MenbrosEscola: MyString
+  Bandeiraescola: MyString
+  StatusEscola: 1

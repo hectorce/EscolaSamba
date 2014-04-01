@@ -1,0 +1,2 @@
+module NotosHelper
+end

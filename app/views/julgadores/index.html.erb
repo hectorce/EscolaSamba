@@ -1,0 +1,27 @@
+<h1>Listing julgadores</h1>
+
+<table>
+  <tr>
+    <th>Nomejulgador</th>
+    <th>Indicacaojulgador</th>
+    <th>Statusjulgador</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @julgadores.each do |julgadore| %>
+  <tr>
+    <td><%= julgadore.NomeJulgador %></td>
+    <td><%= julgadore.IndicacaoJulgador %></td>
+    <td><%= julgadore.StatusJulgador %></td>
+    <td><%= link_to 'Show', julgadore %></td>
+    <td><%= link_to 'Edit', edit_julgadore_path(julgadore) %></td>
+    <td><%= link_to 'Destroy', julgadore, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Julgadore', new_julgadore_path %>

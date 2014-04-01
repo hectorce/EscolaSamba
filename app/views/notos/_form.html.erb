@@ -1,0 +1,45 @@
+<%= form_for(@noto) do |f| %>
+  <% if @noto.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@noto.errors.count, "error") %> prohibited this noto from being saved:</h2>
+
+      <ul>
+      <% @noto.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :Nota1 %><br />
+    <%= f.text_field :Nota1 %>
+  </div>
+  <div class="field">
+    <%= f.label :Nota2 %><br />
+    <%= f.text_field :Nota2 %>
+  </div>
+  <div class="field">
+    <%= f.label :Nota3 %><br />
+    <%= f.text_field :Nota3 %>
+  </div>
+  <div class="field">
+    <%= f.label :Nota4 %><br />
+    <%= f.text_field :Nota4 %>
+  </div>
+  <div class="field">
+    <%= f.label :NotaMin %><br />
+    <%= f.text_field :NotaMin %>
+  </div>
+  <div class="field">
+    <%= f.label :NotaMax %><br />
+    <%= f.text_field :NotaMax %>
+  </div>
+  <div class="field">
+    <%= f.label :Total %><br />
+    <%= f.text_field :Total %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

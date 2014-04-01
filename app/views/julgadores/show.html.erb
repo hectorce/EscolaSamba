@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nomejulgador:</b>
+  <%= @julgadore.NomeJulgador %>
+</p>
+
+<p>
+  <b>Indicacaojulgador:</b>
+  <%= @julgadore.IndicacaoJulgador %>
+</p>
+
+<p>
+  <b>Statusjulgador:</b>
+  <%= @julgadore.StatusJulgador %>
+</p>
+
+
+<%= link_to 'Edit', edit_julgadore_path(@julgadore) %> |
+<%= link_to 'Back', julgadores_path %>

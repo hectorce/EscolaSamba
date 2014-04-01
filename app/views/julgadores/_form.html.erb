@@ -1,0 +1,29 @@
+<%= form_for(@julgadore) do |f| %>
+  <% if @julgadore.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@julgadore.errors.count, "error") %> prohibited this julgadore from being saved:</h2>
+
+      <ul>
+      <% @julgadore.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :NomeJulgador %><br />
+    <%= f.text_field :NomeJulgador %>
+  </div>
+  <div class="field">
+    <%= f.label :IndicacaoJulgador %><br />
+    <%= f.text_field :IndicacaoJulgador %>
+  </div>
+  <div class="field">
+    <%= f.label :StatusJulgador %><br />
+    <%= f.number_field :StatusJulgador %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Nota1: 9.99
+  Nota2: 9.99
+  Nota3: 9.99
+  Nota4: 9.99
+  NotaMin: 9.99
+  NotaMax: 9.99
+  Total: 9.99
+
+two:
+  Nota1: 9.99
+  Nota2: 9.99
+  Nota3: 9.99
+  Nota4: 9.99
+  NotaMin: 9.99
+  NotaMax: 9.99
+  Total: 9.99

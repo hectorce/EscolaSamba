@@ -1,0 +1,35 @@
+<h1>Listing notos</h1>
+
+<table>
+  <tr>
+    <th>Nota1</th>
+    <th>Nota2</th>
+    <th>Nota3</th>
+    <th>Nota4</th>
+    <th>Notamin</th>
+    <th>Notamax</th>
+    <th>Total</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @notos.each do |noto| %>
+  <tr>
+    <td><%= noto.Nota1 %></td>
+    <td><%= noto.Nota2 %></td>
+    <td><%= noto.Nota3 %></td>
+    <td><%= noto.Nota4 %></td>
+    <td><%= noto.NotaMin %></td>
+    <td><%= noto.NotaMax %></td>
+    <td><%= noto.Total %></td>
+    <td><%= link_to 'Show', noto %></td>
+    <td><%= link_to 'Edit', edit_noto_path(noto) %></td>
+    <td><%= link_to 'Destroy', noto, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Noto', new_noto_path %>

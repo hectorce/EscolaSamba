@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  NomeJulgador: MyString
+  IndicacaoJulgador: MyString
+  StatusJulgador: 1
+
+two:
+  NomeJulgador: MyString
+  IndicacaoJulgador: MyString
+  StatusJulgador: 1

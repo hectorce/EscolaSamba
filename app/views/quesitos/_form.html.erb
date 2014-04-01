@@ -1,0 +1,25 @@
+<%= form_for(@quesito) do |f| %>
+  <% if @quesito.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quesito.errors.count, "error") %> prohibited this quesito from being saved:</h2>
+
+      <ul>
+      <% @quesito.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :NomeQuesito %><br />
+    <%= f.text_field :NomeQuesito %>
+  </div>
+  <div class="field">
+    <%= f.label :StatusQuesito %><br />
+    <%= f.number_field :StatusQuesito %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

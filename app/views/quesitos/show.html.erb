@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nomequesito:</b>
+  <%= @quesito.NomeQuesito %>
+</p>
+
+<p>
+  <b>Statusquesito:</b>
+  <%= @quesito.StatusQuesito %>
+</p>
+
+
+<%= link_to 'Edit', edit_quesito_path(@quesito) %> |
+<%= link_to 'Back', quesitos_path %>
