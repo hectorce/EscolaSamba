@@ -1,0 +1,2 @@
+class TabuadaController < ApplicationController
+end
